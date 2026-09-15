@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Математическая физика и компьютерное моделирование — Регистрация</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #000000;
+    font-size: 13px;
+  }
+
+  /* Header */
+  .header {
+    background: #0d3a7a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .header-left img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    display: block;
+  }
+  .header-title h1 {
+    font-size: 22px;
+    margin: 0;
+    font-weight: normal;
+  }
+  .header-title h2 {
+    font-size: 18px;
+    margin: 2px 0 0 0;
+    font-weight: normal;
+  }
+  .header-lang a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 13px;
+  }
+  .header-lang a:hover { text-decoration: underline; }
+
+  /* Body */
+  .content {
+    padding: 20px 25px;
+    max-width: 900px;
+  }
+  h3.section-title {
+    background: #000;
+    color: #fff;
+    padding: 6px 10px;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    align-items: start;
+    margin-bottom: 6px;
+    gap: 10px;
+  }
+  .form-row label {
+    padding-top: 4px;
+  }
+  .required { color: red; }
+
+  .hint {
+    grid-column: 1 / -1;
+    font-style: italic;
+    font-size: 12px;
+    margin: 4px 0 8px 0;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  select {
+    width: 100%;
+    padding: 4px 6px;
+    background: #f2f2f2;
+    border: 1px solid #999;
+    font-size: 13px;
+    color: #444;
+  }
+
+  input::placeholder { color: #888; }
+
+  .add-btn {
+    grid-column: 2;
+    background: #ddd;
+    border: 1px solid #999;
+    padding: 4px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    width: fit-content;
+    margin-bottom: 10px;
+  }
+
+  .checkbox-row {
+    display: grid;
+    grid-template-columns: 260px 20px 1fr;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 4px;
+  }
+  .checkbox-note {
+    grid-column: 3;
+    font-style: italic;
+    font-size: 12px;
+    margin: 0 0 10px 0;
+    grid-row: auto;
+  }
+  .checkbox-note a { color: #0645ad; }
+
+  .file-row input[type="file"] {
+    font-size: 12px;
+  }
+  .clear-link {
+    grid-column: 2;
+    font-size: 12px;
+    color: #0645ad;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .submit-btn {
+    background: #eee;
+    border: 1px solid #999;
+    padding: 8px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  .submit-btn:hover { background: #ddd; }
+
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-left">
+      <img src="img/logo.png" alt="logo" class="esub-header__logo">
+      <div class="header-title">
+        <h1>Математическая физика и компьютерное моделирование</h1>
+        <h2></h2>
+      </div>
+    </div>
+    <div class="header-lang">
+      <a href="#">English</a> <a href="#">Русский</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <h3 class="section-title">Регистрация</h3>
+
+    <form>
+      <div class="form-row">
+        <label>Фамилия: <span class="required">*</span></label>
+        <input type="text">
+      </div>
+
+      <div class="form-row">
+        <label>Имя: <span class="required">*</span></label>
+        <input type="text">
+      </div>
+
+      <div class="form-row">
+        <label>Отчество (обязательно, если имеется):</label>
+        <input type="text">
+      </div>
+
+      <div class="form-row">
+        <label>Фамилия на английском языке: <span class="required">*</span></label>
+        <input type="text" placeholder="Kostryukov">
+      </div>
+
+      <div class="form-row">
+        <label>Имя на английском языке: <span class="required">*</span></label>
+        <input type="text" placeholder="Artem">
+      </div>
+
+      <div class="form-row">
+        <label>Инициалы на английском языке: <span class="required">*</span></label>
+        <input type="text">
+      </div>
+<!--
+      <div class="hint">Начните вводить название организации и выберите пункт из выпадающего списка. Если Вашей организации нет в списке, нажмите кнопку "Добавить новую организацию" и заполните необходимые поля.</div>
+
+      <div class="form-row">
+        <label>Аффилиация (оф. название без сокращений): <span class="required">*</span></label>
+        <input type="text" placeholder="Волгоградский государственный университет">
+      </div>
+      <div class="add-btn">Добавить новую организацию</div>
+
+      <div class="form-row">
+        <label>Аффилиация на англ. (оф. название без сокращений): <span class="required">*</span></label>
+        <input type="text" placeholder="Volgograd State University">
+      </div>
+
+      <div class="form-row">
+        <label>Рабочий почтовый адрес с индексом:</label>
+        <input type="text" placeholder="400062,  Россия, г. Волгоград, Университетский проспект, д.100.">
+      </div>
+
+      <div class="form-row">
+        <label>Рабочий почтовый адрес с индексом на англ.:</label>
+        <input type="text" placeholder="University avenue 100, Volgograd, 400062, Russia.">
+      </div>
+
+      <div class="form-row">
+        <label>Подразделение организации 2 ур.:</label>
+        <input type="text" placeholder="институт прикладной математики и механики / факультет инноватики">
+      </div>
+
+      <div class="form-row">
+        <label>Подразделение организации 2 ур. на англ.:</label>
+        <input type="text" placeholder="institute of applied mathematics and mechanics / faculty of innovation">
+      </div>
+
+      <div class="form-row">
+        <label>Подразделение организации 3 ур.:</label>
+        <input type="text" placeholder="кафедра гидроаэродинамики">
+      </div>
+
+      <div class="form-row">
+        <label>Подразделение организации 3 ур. на англ.:</label>
+        <input type="text" placeholder="department of hydroaerodynamics">
+      </div>
+
+      <div class="form-row">
+        <label>Должность на рус.: <span class="required">*</span></label>
+        <input type="text">
+      </div>
+
+      <div class="form-row">
+        <label>Должность на англ.:</label>
+        <input type="text">
+      </div>
+      <div class="add-btn">Добавить второе аффилиование</div>
+      -->
+
+      <hr>
+
+<!--
+      <div class="form-row">
+        <label>Ученая степень:</label>
+        <select>
+          <option>---------</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label>Ученое звание:</label>
+        <select>
+          <option>---------</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label>SPIN-код, присвоенный Вам в РИНЦ:</label>
+        <input type="text" placeholder="1234-5678">
+      </div>
+
+      <div class="form-row">
+        <label>Scopus ID:</label>
+        <input type="text">
+      </div>
+
+      <div class="form-row">
+        <label>Идентификатор ORCID:</label>
+        <input type="text" placeholder="0000-0002-1825-0097">
+      </div>
+  -->
+      <div class="form-row">
+        <label>Телефон для связи: <span class="required">*</span></label>
+        <input type="tel" placeholder="+7(987)1234567">
+      </div>
+
+      <div class="form-row">
+        <label>Другие телефоны:</label>
+        <input type="text" placeholder="+7(111)2223344, +7(999)8887766">
+      </div>
+
+      <div class="form-row">
+        <label>Адрес электронной почты: <span class="required">*</span></label>
+        <input type="email" placeholder="prib-234_517584@mail.ru">
+      </div>
+
+
+      <div class="form-row">
+        <label>Почтовый адрес для отправки журнала:</label>
+        <input type="text">
+      </div>
+
+      <div class="form-row">
+        <label>Логин: <span class="required">*</span> (используйте только латинские буквы, цифры и знаки из набора @/.+/-/_)</label>
+        <input type="text" placeholder="kost_art">
+      </div>
+
+      <div class="form-row">
+        <label>Пароль: <span class="required">*</span></label>
+        <input type="password">
+      </div>
+
+      <div class="form-row">
+        <label>Повтор пароля: <span class="required">*</span></label>
+        <input type="password">
+      </div>
+
+      <!--
+      <div class="form-row file-row">
+        <label>Фото: (в формате jpg, png, gif, размером не более 3Мб)</label>
+        <input type="file">
+      </div>
+      <div class="clear-link">Очистить</div>
+
+      <div class="checkbox-row">
+        <label>Согласие на обработку персональных данных: <span class="required">*</span></label>
+        <input type="checkbox">
+        <span></span>
+      </div>
+      <div class="checkbox-note">Устанавливая галочку внутри данного чекбокса, Вы даете <a href="#">согласие на обработку своих персональных данных</a></div>
+
+      <div class="checkbox-row">
+        <label>Я ознакомился с политикой конфиденциальности: <span class="required">*</span></label>
+        <input type="checkbox">
+        <span></span>
+      </div>
+      <div class="checkbox-note">Устанавливая галочку внутри данного чекбокса, Вы подтверждаете, что ознакомились с <a href="#">Политикой конфиденциальности</a></div>
+-->
+      <button type="submit" class="submit-btn">Зарегистрироваться</button>
+    </form>
+  </div>
+
+</body>
+</html>
