@@ -41,7 +41,7 @@ a:hover { text-decoration: underline; }
 
 /* ---------- ШАПКА ---------- */
 .header {
-    background: #0a0a0a;
+    background: #ffffff;
     padding: 15px 0;
 }
 .header__inner {
@@ -83,7 +83,7 @@ a:hover { text-decoration: underline; }
 }
 
 .logo__text strong {
-    color: #fff;
+    color: #000000;
 }
 
 .logo__text span {

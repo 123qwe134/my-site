@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <title>Труды ИМИТ — Мои статьи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- ШАПКА -->
+<header class="header">
+    <div class="container header__inner">
+
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Логотип" class="logo__img">
+
+            <div class="logo__text">
+                <strong>Труды ИМИТ</strong>
+                <span>Волгоградский государственный университет</span>
+            </div>
+        </a>
+
+        <div class="issue-info">
+            <div><b></b><span></span></div>
+            <div><b></b><span></span></div>
+            <div><b></b><span></span></div>
+            <div><b></b><span></span></div>
+        </div>
+
+    </div>
+</header>
+
+<!-- МОИ СТАТЬИ -->
+<main class="my-articles-page">
+
+    <div class="container">
+
+        <div class="my-articles-layout">
+
+            <!-- ОСНОВНОЙ КОНТЕНТ -->
+            <section class="my-articles-content">
+
+                <h1 class="my-articles-title">Мои статьи</h1>
+
+                <!-- СТАТЬЯ 1 -->
+                <article class="article-card">
+
+                    <div class="article-card__header">
+
+                        <h2 class="article-card__title">
+                            Название статьи
+                        </h2>
+
+                        <span class="article-status article-status--review">
+                            На рассмотрении
+                        </span>
+
+                    </div>
+
+                    <div class="article-card__info">
+
+                        <div class="article-card__row">
+                            <span class="article-card__label">
+                                Дата подачи:
+                            </span>
+
+                            <span class="article-card__value">
+                                31.03.2026
+                            </span>
+                        </div>
+
+                        <div class="article-card__row">
+                            <span class="article-card__label">
+                                Журнал:
+                            </span>
+
+                            <span class="article-card__value">
+                                Труды ИМИТ
+                            </span>
+                        </div>
+
+                        <div class="article-card__row">
+                            <span class="article-card__label">
+                                Авторы:
+                            </span>
+
+                            <span class="article-card__value">
+                                Кострюков Артём Александрович
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <!-- ВЕРСИЯ СТАТЬИ -->
+                    <div class="article-card__section">
+
+                        <h3>Файл статьи</h3>
+
+                        <div class="article-file">
+
+                            <span class="article-file__icon">
+                                📄
+                            </span>
+
+                            <span class="article-file__name">
+                                article.pdf
+                            </span>
+
+                            <a href="#" class="article-file__button">
+                                Открыть
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- СОСТОЯНИЕ -->
+                    <div class="article-card__section">
+
+                        <h3>Состояние статьи</h3>
+
+                        <div class="article-progress">
+
+                            <div class="article-progress__item article-progress__item--done">
+
+                                <span class="article-progress__circle">
+                                    ✓
+                                </span>
+
+                                <div>
+                                    <strong>Статья подана</strong>
+                                    <p>Материалы отправлены в редакцию.</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="article-progress__item article-progress__item--done">
+
+                                <span class="article-progress__circle">
+                                    ✓
+                                </span>
+
+                                <div>
+                                    <strong>Проверка секретарём</strong>
+                                    <p>Материалы проверены.</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="article-progress__item article-progress__item--current">
+
+                                <span class="article-progress__circle">
+                                    •
+                                </span>
+
+                                <div>
+                                    <strong>Рецензирование</strong>
+                                    <p>Статья находится на рассмотрении.</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="article-progress__item">
+
+                                <span class="article-progress__circle">
+                                    
+                                </span>
+
+                                <div>
+                                    <strong>Решение редакции</strong>
+                                    <p>Решение ещё не принято.</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- КНОПКИ -->
+                    <div class="article-card__actions">
+
+                        <a href="#" class="article-button">
+                            Подробнее
+                        </a>
+
+                        
+
+                    </div>
+
+                </article>
+
+
+                <!-- ЕСЛИ СТАТЕЙ НЕТ -->
+                <!--
+                <div class="articles-empty">
+
+                    <div class="articles-empty__icon">
+                        📄
+                    </div>
+
+                    <h2>У вас пока нет статей</h2>
+
+                    <p>
+                        Чтобы отправить статью в журнал,
+                        воспользуйтесь кнопкой «Подать статью».
+                    </p>
+
+                    <a href="#" class="article-button">
+                        Подать статью
+                    </a>
+
+                </div>
+                -->
+
+
+            </section>
+
+
+            <!-- ПРАВОЕ МЕНЮ -->
+            <aside class="profile-sidebar">
+
+                <div class="profile-menu">
+
+                    <a href="lk.html"
+                       class="profile-menu__item">
+                         Личный кабинет
+                    </a>
+
+                    <a href="myarticles.html"
+                       class="profile-menu__item profile-menu__item--active">
+                         Мои статьи 
+                    </a>
+
+                    <a href="#" class="profile-menu__item">
+                         Мои рецензии
+                    </a>
+
+
+                    <a href="#" class="profile-menu__item">
+                         Мои соавторы
+                    </a>
+
+                    <a href="#" class="profile-menu__item">
+                         Редакция журнала
+                    </a>
+
+                    <a href="#" class="profile-menu__item">
+                         Помощь
+                    </a>
+
+                    <a href="#" class="profile-menu__item">
+                         Тех. поддержка
+                    </a>
+
+                    <a href="#" class="profile-menu__item">
+                         Выйти
+                    </a>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container footer__inner">
+
+            <!-- Колонка 1: логотип + название -->
+            <div class="footer__col footer__col--brand">
+                <img src="img/logo.png" alt="Логотип" class="footer__logo">
+                <p class="footer__brand">
+                    Математическая физика и компьютерное моделирование
+                </p>
+
+            </div>
+
+            <!-- Колонка 2: адрес -->
+            <div class="footer__col">
+                <h3 class="footer__title">Адрес</h3>
+                <p class="footer__text">
+                    <span class="footer__icon">📍</span>
+                    400062, г. Волгоград, проспект Университетский д. 100.
+                </p>
+            </div>
+
+            <!-- Колонка 3: контакты -->
+            <div class="footer__col">
+                <h3 class="footer__title">Контакты</h3>
+                <p class="footer__text">
+                    <span class="footer__icon">📞</span>
+                    <a>8(8442) 46-02-79</a>
+                </p>
+                <p class="footer__text">
+                    <span class="footer__icon">✉️</span>
+                    <a href="mailto:vestnik1@volsu.ru">vestnik1@volsu.ru</a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

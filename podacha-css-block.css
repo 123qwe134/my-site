@@ -1,0 +1,404 @@
+
+/* ==========================================================
+   PODACHA.HTML — СТИЛЬ СТРАНИЦЫ ПО СКРИНШОТУ
+   Вставить В САМЫЙ КОНЕЦ style.css
+   ========================================================== */
+
+/* ---------- ФОН СТРАНИЦЫ ---------- */
+
+.podacha-page {
+    background: #f5f6f8;
+    color: #40505f;
+    padding: 0 0 60px;
+    min-height: 900px;
+}
+
+
+/* ---------- ХЛЕБНЫЕ КРОШКИ ---------- */
+
+.podacha-breadcrumbs {
+    padding-top: 14px;
+    margin-bottom: 28px;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 12px;
+    color: #2389bd;
+}
+
+.podacha-breadcrumbs a {
+    color: #2389bd;
+    text-decoration: none;
+}
+
+.podacha-breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------- ГЛАВНЫЙ ЗАГОЛОВОК ---------- */
+
+.podacha-title {
+    margin: 0 0 28px;
+
+    color: #4b4b4b;
+    font-size: 26px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+
+/* ---------- ДВЕ КОЛОНКИ ---------- */
+
+.podacha-layout {
+    display: grid;
+
+    /*
+       Слева большая область с текстом,
+       справа меню.
+    */
+    grid-template-columns: minmax(0, 1fr) 360px;
+
+    gap: 30px;
+
+    align-items: start;
+}
+
+
+/* ==========================================================
+   ЛЕВАЯ КАРТОЧКА С ТЕКСТОМ
+   ========================================================== */
+
+.podacha-content {
+    background: #ffffff;
+
+    border: 1px solid #e7e9ec;
+    border-radius: 4px;
+
+    padding: 40px 25px 45px;
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
+}
+
+.podacha-content section {
+    margin: 0 0 28px;
+}
+
+.podacha-content section:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Заголовки «Подача статьи» и «Рассмотрение материалов» */
+
+.podacha-content h2 {
+    margin: 0 0 18px;
+
+    color: #1c3970;
+
+    font-size: 19px;
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+
+/* Нумерованный список */
+
+.podacha-content ol {
+    margin: 0;
+    padding-left: 31px;
+}
+
+.podacha-content li {
+    margin: 0 0 12px;
+    padding-left: 0;
+
+    color: #405a73;
+
+    font-size: 16px;
+    line-height: 1.65;
+
+    text-align: justify;
+}
+
+.podacha-content li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Синие ссылки внутри текста */
+
+.podacha-content a {
+    color: #008bc2;
+    text-decoration: none;
+}
+
+.podacha-content a:hover {
+    color: #006f9d;
+    text-decoration: underline;
+}
+
+
+/* Жирный курсив */
+
+.podacha-content strong em {
+    font-weight: 700;
+}
+
+
+/* Цвет маркеров 1,2,3 */
+
+.podacha-content li::marker {
+    color: #405a73;
+    font-size: 15px;
+}
+
+
+/* ==========================================================
+   ПРАВАЯ КОЛОНКА
+   ========================================================== */
+
+.podacha-sidebar {
+    min-width: 0;
+}
+
+
+/* ---------- КНОПКА «ПОДАТЬ СТАТЬЮ» ---------- */
+
+.podacha-submit {
+    display: block;
+
+    width: 188px;
+
+    margin: 0 0 20px auto;
+
+    padding: 13px 12px;
+
+    background: #208fc2;
+    color: #ffffff !important;
+
+    border-radius: 4px;
+
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none !important;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
+
+    transition:
+        background .2s ease,
+        transform .2s ease;
+}
+
+.podacha-submit:hover {
+    background: #197da9;
+    transform: translateY(-1px);
+}
+
+
+/* ---------- ПРАВОЕ МЕНЮ ---------- */
+
+.podacha-menu {
+    background: #ffffff;
+
+    border-radius: 4px;
+
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .08);
+
+    overflow: hidden;
+}
+
+.podacha-menu a {
+    position: relative;
+
+    display: block;
+
+    min-height: 49px;
+
+    padding: 14px 20px;
+
+    border-bottom: 1px solid #e8e8e8;
+
+    color: #6a6a6a;
+
+    font-size: 15px;
+    line-height: 1.35;
+
+    text-decoration: none;
+
+    background: #ffffff;
+
+    transition:
+        background .15s ease,
+        color .15s ease,
+        padding-left .15s ease;
+}
+
+.podacha-menu a:last-child {
+    border-bottom: none;
+}
+
+.podacha-menu a:hover {
+    background: #f7fafc;
+    color: #208fc2;
+    text-decoration: none;
+}
+
+
+/* Активный пункт */
+
+.podacha-menu a.current {
+    color: #666666;
+    background: #ffffff;
+}
+
+
+/*
+   Голубая полоска слева у активного пункта —
+   как на скриншоте.
+*/
+
+.podacha-menu a.current::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 4px;
+
+    background: #23a8dc;
+}
+
+
+/* ==========================================================
+   ПОСЛЕДНИЕ ВЫПУСКИ
+   ========================================================== */
+
+.podacha-latest {
+    margin-top: 30px;
+
+    background: #ffffff;
+
+    border-radius: 4px;
+
+    padding: 17px 20px 20px;
+
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .08);
+}
+
+.podacha-latest h2 {
+    margin: 0;
+
+    text-align: center;
+
+    color: #555555;
+
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.podacha-latest-line {
+    width: 24px;
+    height: 3px;
+
+    margin: 8px auto 12px;
+
+    background: #24a7dc;
+}
+
+.podacha-latest a {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 5px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    color: #555555;
+    text-decoration: none;
+}
+
+.podacha-latest a:last-child {
+    border-bottom: none;
+}
+
+.podacha-latest a:hover {
+    color: #208fc2;
+}
+
+.podacha-latest strong {
+    color: #1c3970;
+    font-size: 16px;
+}
+
+.podacha-latest span {
+    font-size: 13px;
+}
+
+
+/* ==========================================================
+   МОБИЛЬНАЯ ВЕРСИЯ
+   ========================================================== */
+
+@media (max-width: 900px) {
+
+    .podacha-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .podacha-sidebar {
+        order: -1;
+    }
+
+    .podacha-submit {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .podacha-menu {
+        margin-bottom: 25px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .podacha-page {
+        padding-bottom: 40px;
+    }
+
+    .podacha-breadcrumbs {
+        margin-bottom: 20px;
+    }
+
+    .podacha-title {
+        font-size: 23px;
+        margin-bottom: 22px;
+    }
+
+    .podacha-content {
+        padding: 28px 18px 35px;
+    }
+
+    .podacha-content h2 {
+        font-size: 18px;
+    }
+
+    .podacha-content li {
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .podacha-layout {
+        gap: 20px;
+    }
+}
